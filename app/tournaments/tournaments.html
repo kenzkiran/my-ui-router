@@ -1,0 +1,13 @@
+<div class="row" style="padding-left: 50px;">
+<h2> Tournaments: </h2>
+</div>
+<div class="row" style="padding-left: 50px;">
+  <div class="col-sm-4 col-md-3">
+    <div class="list-group">
+      <a ng-class="{active: $state.includes('tournaments.list')}" class="list-group-item" ui-sref="tournaments.list">All Tournaments </a></li>
+      <a class="list-group-item" ui-sref="tournaments.instance({id:t.id})" ng-repeat="t in tournaments"> {{t.name}} </a>
+    </div>
+  </div>
+  <div class="col-sm-8 col-md-6" ui-view> Put your content here </div>
+  </div>
+</div>

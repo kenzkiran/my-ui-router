@@ -1,0 +1,6 @@
+<h2>All Tournaments</h2>
+<ul>
+  <li ng-repeat="t in tournaments">
+    <a ui-sref="tournaments.instance({id:t.id})">{{t.name}}</a>
+  </li>
+</ul>

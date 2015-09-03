@@ -1,0 +1,17 @@
+{
+  "name": "angular_router_example",
+  "version": "0.0.0",
+  "authors": [
+    "Ravikiran Ramachandra <rramachandra@blackberry.com>"
+  ],
+  "description": "A simple router example",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

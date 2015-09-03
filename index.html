@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/tournaments/tournaments.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body  ng-app='simpleUiRouter' style="padding-top: 70px;">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" >
+        <div class="navbar-inner"><div class="container">
+      <a class="navbar-brand" ui-sref="#">Hello UI Router!</a>
+      <ul class="nav navbar-nav">
+        <li> <a ui-sref='aboutus'> AboutUs</a>
+        <li> <a ui-sref='tournaments.list'> Tournaments </a>
+      </ul>
+      </div></div>
+    </div>
+  <div></div>
+  <div ui-view> </div>
+  <hr>
+    <pre>
+      $state = {{$state.current.name}}
+      $stateParams = {{$stateParams}}
+      $state full url = {{ $state.$current.url.source }}
+    </pre>
+  </hr>
+  </body>
+</html>
